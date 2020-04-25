@@ -34,7 +34,7 @@ require 'firebase_id_token/signature'
 # ```
 # FirebaseIdToken.configure do |config|
 #   config.project_ids = ['my-project-id', 'another-project-id']
-#   congig.redis = Redis.new(:host => "10.0.1.1", :port => 6380, :db => 15)
+#   config.redis = Redis.new(:host => "10.0.1.1", :port => 6380, :db => 15)
 # end
 # ```
 #
@@ -49,7 +49,7 @@ module FirebaseIdToken
 
   def self.configuration
     @configuration ||= Configuration.new
-  end 
+  end
 
   # Resets Configuration to defaults.
   def self.reset
